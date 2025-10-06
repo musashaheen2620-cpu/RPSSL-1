@@ -1,0 +1,41 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string[] valg = { "Rock", "Paper", "Scissors", "Spock", "Lizard" };
+        Random rnd = new Random();
+
+        Console.WriteLine("Rock Paper Scissors Spock Lizard!");
+
+        while (true)
+        {
+            Console.WriteLine("\nVælg et tal: 1=Rock, 2=Paper, 3=Scissors, 4=Spock, 5=Lizard");
+            int spiller = Convert.ToInt32(Console.ReadLine()) - 1;
+            int computer = rnd.Next(5);
+
+            Console.WriteLine($"Du valgte: {valg[spiller]}");
+            Console.WriteLine($"Computeren valgte: {valg[computer]}");
+
+            if (spiller == computer)
+            {
+                Console.WriteLine("Uafgjort!");
+            }
+            else if (
+                (valg[spiller] == "Rock" && (valg[computer] == "Scissors" || valg[computer] == "Lizard")) ||
+                (valg[spiller] == "Paper" && (valg[computer] == "Rock" || valg[computer] == "Spock")) ||
+                (valg[spiller] == "Scissors" && (valg[computer] == "Paper" || valg[computer] == "Lizard")) ||
+                (valg[spiller] == "Lizard" && (valg[computer] == "Spock" || valg[computer] == "Paper")) ||
+                (valg[spiller] == "Spock" && (valg[computer] == "Rock" || valg[computer] == "Scissors"))
+            )
+            {
+                Console.WriteLine("✅ Du vandt!");
+            }
+            else
+            {
+                Console.WriteLine("❌ Computeren vandt!");
+            }
+        }
+    }
+}
