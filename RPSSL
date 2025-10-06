@@ -11,7 +11,7 @@ class Program
 
         while (true)
         {
-            Console.WriteLine("\nVælg et tal: 1=Rock, 2=Paper, 3=Scissors, 4=Spock, 5=Lizard");
+            Console.WriteLine("Vælg et tal: 1=Rock, 2=Paper, 3=Scissors, 4=Spock, 5=Lizard");
             int spiller = Convert.ToInt32(Console.ReadLine()) - 1;
             int computer = rnd.Next(5);
 
