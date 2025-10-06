@@ -30,11 +30,11 @@ class Program
                 (valg[spiller] == "Spock" && (valg[computer] == "Rock" || valg[computer] == "Scissors"))
             )
             {
-                Console.WriteLine("✅ Du vandt!");
+                Console.WriteLine("Du vandt!");
             }
             else
             {
-                Console.WriteLine("❌ Computeren vandt!");
+                Console.WriteLine("Computeren vandt!");
             }
         }
     }
