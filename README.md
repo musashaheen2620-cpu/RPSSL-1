@@ -1,6 +1,6 @@
 Readme:
 
-- Det er et kort spil hvor det er brugeren mod computeren
+- Det er et spil hvor det er brugeren mod computeren
 
 - Der er flere kombinationer som er 1.Rock, 2.Paper, 3.Scissors, 4.Spock og 5. Lizzard
 
